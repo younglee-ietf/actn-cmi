@@ -1,0 +1,20 @@
+module: ietf-l1csm
+    +--rw l1cs
+       +--rw access
+       |  +--rw uni-list* [UNI-ID]
+       |     +--rw UNI-ID               string
+       |     +--rw protocol?            identityref
+       |     +--rw coding?              identityref
+       |     +--rw optical_interface?   identityref
+       +--rw service
+          +--rw service-list* [subscriber-l1vc-id]
+             +--rw subscriber-l1vc-id    string
+             +--rw service-config
+                +--rw subscriber-l1vc-id?         string
+                +--rw subscriber-l1vc-ep-id-1?    string
+                +--rw subscriber-l1vc-ep-id-2?    string
+                +--rw subscriber-l1vc-ep-UNI-1?   -> /l1cs/access/uni-list/UNI-ID
+                +--rw subscriber-l1vc-ep-UNI-2?   -> /l1cs/access/uni-list/UNI-ID
+                +--rw time-start?                 yang:date-and-time
+                +--rw time-interval?              int64
+                +--rw performance-metric?         identityref
