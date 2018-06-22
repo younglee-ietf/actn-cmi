@@ -12,11 +12,25 @@ module ietf-l1-mef-service-types {
 	 Editor: K. Lee (kwangkoog.lee@kt.com)
 	 Editor: Y. Lee (leeyoung@huawei.com)
 	 Editor: D. Dhody (dhruv.ietf@gmail.com)
-	 Editor: O. Gonzalez de-Dios(oscar.gonzalezdedios@telefonica.com)
+	 Editor: O. G. de-Dios(oscar.gonzalezdedios@telefonica.com)
 	 Editor: D. Ceccarelli(daniele.ceccarelli@ericsson.com)";
 
   description
-	 "This module defines L1 service types based on MEF subscriber Layer 1 Connectivity Service Attribute.";
+     "This module defines L1 service types based on MEF  
+     subscriber Layer 1 Connectivity Service Attribute. 
+     
+     Copyright (c) 2018 IETF Trust and the persons identified as
+     authors of the code.  All rights reserved.
+     Redistribution and use in source and binary forms, with or
+     without modification, is permitted pursuant to, and subject
+     to the license terms contained in, the Simplified BSD 
+     License set forth in Section 4.c of the IETF Trust's Legal 
+     Provisions Relating to IETF Documents
+     (http://trustee.ietf.org/license-info).
+
+     This version of this YANG module is part of RFC XXXX; see
+     the RFC itself for full legal notices.";
+
 
   revision "2018-06-20" {
 	 description 
