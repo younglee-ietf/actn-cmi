@@ -1,5 +1,5 @@
 module ietf-l1-mef-service-types {
-  namespace "urn:ietf:params:xml:ns:yang:ietf-mef-l1-service-types";
+  namespace "urn:ietf:params:xml:ns:yang:ietf-l1-mef-service-types";
   prefix "l1-st";
 
   organization
