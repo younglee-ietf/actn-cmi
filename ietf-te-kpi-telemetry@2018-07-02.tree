@@ -1,0 +1,39 @@
+module: ietf-te-kpi-telemetry
+  augment /te:te/te:tunnels/te:tunnel:
+    +--rw te-scaling-intent
+    |  +--rw scale-in-intent
+    |  |  +--rw threshold-time?             uint32
+    |  |  +--rw cooldown-time?              uint32
+    |  |  +--rw scale-in-operation-type?    scaling-criteria-operation
+    |  |  +--rw scale-out-operation-type?   scaling-criteria-operation
+    |  |  +--rw scaling-condition* [performance-type]
+    |  |     +--rw performance-type           identityref
+    |  |     +--rw te-telemetry-tunnel-ref?   -> /te:te/tunnels/tunnel/name
+    |  +--rw scale-out-intent
+    |     +--rw threshold-time?             uint32
+    |     +--rw cooldown-time?              uint32
+    |     +--rw scale-in-operation-type?    scaling-criteria-operation
+    |     +--rw scale-out-operation-type?   scaling-criteria-operation
+    |     +--rw scaling-condition* [performance-type]
+    |        +--rw performance-type           identityref
+    |        +--rw te-telemetry-tunnel-ref?   -> /te:te/tunnels/tunnel/name
+    +--ro te-telemetry
+       +--ro id?                                   string
+       +--ro unidirectional-delay?                 uint32
+       +--ro unidirectional-min-delay?             uint32
+       +--ro unidirectional-max-delay?             uint32
+       +--ro unidirectional-delay-variation?       uint32
+       +--ro unidirectional-packet-loss?           decimal64
+       +--ro unidirectional-residual-bandwidth?    rt-types:bandwidth-ieee-float32
+       +--ro unidirectional-available-bandwidth?   rt-types:bandwidth-ieee-float32
+       +--ro unidirectional-utilized-bandwidth?    rt-types:bandwidth-ieee-float32
+       +--ro bidirectional-delay?                  uint32
+       +--ro bidirectional-min-delay?              uint32
+       +--ro bidirectional-max-delay?              uint32
+       +--ro bidirectional-delay-variation?        uint32
+       +--ro bidirectional-packet-loss?            decimal64
+       +--ro bidirectional-residual-bandwidth?     rt-types:bandwidth-ieee-float32
+       +--ro bidirectional-available-bandwidth?    rt-types:bandwidth-ieee-float32
+       +--ro bidirectional-utilized-bandwidth?     rt-types:bandwidth-ieee-float32
+       +--ro utilized-percentage?                  uint8
+       +--ro te-ref?                               -> /te:te/tunnels/tunnel/name
