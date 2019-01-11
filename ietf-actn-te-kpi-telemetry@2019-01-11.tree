@@ -1,0 +1,35 @@
+module: ietf-actn-te-kpi-telemetry
+  augment /vn:actn/vn:vn/vn:vn-list:
+    +--rw vn-scaling-intent
+    |  +--rw scale-in-intent
+    |  +--rw scale-out-intent
+    +--ro vn-telemetry
+       +--ro performance-metrics-one-way
+       |  +--ro one-way-delay?                           uint32
+       |  +--ro one-way-delay-normality?                 te-types:performance-metrics-normality
+       |  +--ro one-way-residual-bandwidth?              rt-types:bandwidth-ieee-float32
+       |  +--ro one-way-residual-bandwidth-normality?    te-types:performance-metrics-normality
+       |  +--ro one-way-available-bandwidth?             rt-types:bandwidth-ieee-float32
+       |  +--ro one-way-available-bandwidth-normality?   te-types:performance-metrics-normality
+       |  +--ro one-way-utilized-bandwidth?              rt-types:bandwidth-ieee-float32
+       |  +--ro one-way-utilized-bandwidth-normality?    te-types:performance-metrics-normality
+       +--ro performance-metrics-two-way
+       |  +--ro two-way-delay?             uint32
+       |  +--ro two-way-delay-normality?   te-types:performance-metrics-normality
+       +--ro grouping-operation?            grouping-operation
+  augment /vn:actn/vn:vn/vn:vn-list/vn:vn-member-list:
+    +--ro vn-member-telemetry
+       +--ro performance-metrics-one-way
+       |  +--ro one-way-delay?                           uint32
+       |  +--ro one-way-delay-normality?                 te-types:performance-metrics-normality
+       |  +--ro one-way-residual-bandwidth?              rt-types:bandwidth-ieee-float32
+       |  +--ro one-way-residual-bandwidth-normality?    te-types:performance-metrics-normality
+       |  +--ro one-way-available-bandwidth?             rt-types:bandwidth-ieee-float32
+       |  +--ro one-way-available-bandwidth-normality?   te-types:performance-metrics-normality
+       |  +--ro one-way-utilized-bandwidth?              rt-types:bandwidth-ieee-float32
+       |  +--ro one-way-utilized-bandwidth-normality?    te-types:performance-metrics-normality
+       +--ro performance-metrics-two-way
+       |  +--ro two-way-delay?             uint32
+       |  +--ro two-way-delay-normality?   te-types:performance-metrics-normality
+       +--ro te-grouped-params*             -> /te:te/tunnels/tunnel/te-kpi:te-telemetry/id
+       +--ro grouping-operation?            grouping-operation
