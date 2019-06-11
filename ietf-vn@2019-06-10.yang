@@ -275,7 +275,7 @@
                     only one of the destination is enabled";
             }
         }
-        leaf connetivity-matrix-id{
+        leaf connectivity-matrix-id{
             type leafref {
                 path "/nw:networks/nw:network/nw:node/tet:te/"
                 + "tet:te-node-attributes/"
@@ -283,7 +283,7 @@
                 + "tet:connectivity-matrix/tet:id";
             }
             description
-                "reference to connetivity-matrix";
+                "reference to connectivity-matrix";
         }
     }//vn-member
     /*
