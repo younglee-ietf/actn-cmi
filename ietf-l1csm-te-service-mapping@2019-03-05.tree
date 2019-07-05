@@ -1,0 +1,28 @@
+
+module: ietf-l1csm-te-service-mapping
+  augment /l1:l1-connectivity/l1:services/l1:service:
+    +--rw te-service-mapping!
+  augment /l1:l1-connectivity/l1:services/l1:service:
+    +--rw te-mapping
+       +--rw map-type?               identityref
+       +--rw availability-type?      identityref
+       +--rw (te)?
+          +--:(actn-vn)
+          |  +--rw actn-vn-ref?      -> /vn:vn/vn-list/vn-id
+          +--:(te-topo)
+          |  +--rw vn-topology-id?   te-types:te-topology-id
+          |  +--rw abstract-node?    -> /nw:networks/network/node/node-id
+          +--:(te-tunnel)
+             +--rw te-tunnel-list*   te:tunnel-ref
+  augment /l1:l1-connectivity/l1:services/l1:service/l1:endpoint-1:
+    +--rw (te)?
+       +--:(actn-vn)
+       |  +--rw actn-vn-ref?   -> /vn:ap/access-point-list/access-point-id
+       +--:(te)
+          +--rw ltp?           te-types:te-tp-id
+  augment /l1:l1-connectivity/l1:services/l1:service/l1:endpoint-2:
+    +--rw (te)?
+       +--:(actn-vn)
+       |  +--rw actn-vn-ref?   -> /vn:ap/access-point-list/access-point-id
+       +--:(te)
+          +--rw ltp?           te-types:te-tp-id
