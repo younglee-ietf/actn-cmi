@@ -1,0 +1,83 @@
+module: ietf-vn
+  +--rw ap
+  |  +--rw access-point-list* [access-point-id]
+  |     +--rw access-point-id      uint32
+  |     +--rw access-point-name?   string
+  |     +--rw pe?
+  |     |       -> /nw:networks/network/node/tet:te-node-id
+  |     +--rw max-bandwidth?       te-types:te-bandwidth
+  |     +--rw avl-bandwidth?       te-types:te-bandwidth
+  |     +--rw vn-ap* [vn-ap-id]
+  |        +--rw vn-ap-id         uint32
+  |        +--rw vn?              -> /vn/vn-list/vn-id
+  |        +--rw abstract-node?
+  |        |       -> /nw:networks/network/node/tet:te-node-id
+  |        +--rw ltp?             leafref
+  +--rw vn
+     +--rw vn-list* [vn-id]
+        +--rw vn-id                 uint32
+        +--rw vn-name?              string
+        +--rw vn-topology-id?       te-types:te-topology-id
+        +--rw abstract-node?
+        |       -> /nw:networks/network/node/tet:te-node-id
+        +--rw vn-member-list* [vn-member-id]
+        |  +--rw vn-member-id              uint32
+        |  +--rw src
+        |  |  +--rw src?
+        |  |  |       -> /ap/access-point-list/access-point-id
+        |  |  +--rw src-vn-ap-id?
+        |  |  |       -> /ap/access-point-list/vn-ap/vn-ap-id
+        |  |  +--rw multi-src?      boolean {multi-src-dest}?
+        |  +--rw dest
+        |  |  +--rw dest?
+        |  |  |       -> /ap/access-point-list/access-point-id
+        |  |  +--rw dest-vn-ap-id?
+        |  |  |       -> /ap/access-point-list/vn-ap/vn-ap-id
+        |  |  +--rw multi-dest?      boolean {multi-src-dest}?
+        |  +--rw connectivity-matrix-id?   leafref
+        |  +--ro oper-status?              identityref
+        +--ro if-selected?          boolean {multi-src-dest}?
+        +--rw admin-status?         identityref
+        +--ro oper-status?          identityref
+        +--rw vn-level-diversity?   vn-disjointness
+
+  rpcs:
+    +---x vn-compute
+       +---w input
+       |  +---w abstract-node?
+       |  |       -> /nw:networks/network/node/tet:te-node-id
+       |  +---w vn-member-list* [vn-member-id]
+       |  |  +---w vn-member-id              uint32
+       |  |  +---w src
+       |  |  |  +---w src?
+       |  |  |  |       -> /ap/access-point-list/access-point-id
+       |  |  |  +---w src-vn-ap-id?
+       |  |  |  |       -> /ap/access-point-list/vn-ap/vn-ap-id
+       |  |  |  +---w multi-src?      boolean {multi-src-dest}?
+       |  |  +---w dest
+       |  |  |  +---w dest?
+       |  |  |  |       -> /ap/access-point-list/access-point-id
+       |  |  |  +---w dest-vn-ap-id?
+       |  |  |  |       -> /ap/access-point-list/vn-ap/vn-ap-id
+       |  |  |  +---w multi-dest?      boolean {multi-src-dest}?
+       |  |  +---w connectivity-matrix-id?   leafref
+       |  +---w vn-level-diversity?   vn-disjointness
+       +--ro output
+          +--ro vn-member-list* [vn-member-id]
+             +--ro vn-member-id              uint32
+             +--ro src
+             |  +--ro src?
+             |  |       -> /ap/access-point-list/access-point-id
+             |  +--ro src-vn-ap-id?
+             |  |       -> /ap/access-point-list/vn-ap/vn-ap-id
+             |  +--ro multi-src?      boolean {multi-src-dest}?
+             +--ro dest
+             |  +--ro dest?
+             |  |       -> /ap/access-point-list/access-point-id
+             |  +--ro dest-vn-ap-id?
+             |  |       -> /ap/access-point-list/vn-ap/vn-ap-id
+             |  +--ro multi-dest?      boolean {multi-src-dest}?
+             +--ro connectivity-matrix-id?   leafref
+             +--ro if-selected?              boolean
+             |       {multi-src-dest}?
+             +--ro compute-status?           identityref
