@@ -1,0 +1,42 @@
+
+module: ietf-te-kpi-telemetry
+  augment /te:te/te:tunnels/te:tunnel:
+    +--rw te-scaling-intent
+    |  +--rw scale-in-intent
+    |  |  +--rw threshold-time?      uint32
+    |  |  +--rw cooldown-time?       uint32
+    |  |  +--rw scaling-condition* [performance-type]
+    |  |     +--rw performance-type           identityref
+    |  |     +--rw threshold-value?           string
+    |  |     +--rw scale-in-operation-type?
+    |  |             scaling-criteria-operation
+    |  +--rw scale-out-intent
+    |     +--rw threshold-time?      uint32
+    |     +--rw cooldown-time?       uint32
+    |     +--rw scaling-condition* [performance-type]
+    |        +--rw performance-type            identityref
+    |        +--rw threshold-value?            string
+    |        +--rw scale-out-operation-type?
+    |                scaling-criteria-operation
+    +--ro te-telemetry
+       +--ro id?                            string
+       +--ro performance-metrics-one-way
+       |  +--ro one-way-delay?                           uint32
+       |  +--ro one-way-delay-normality?
+       |  |       te-types:performance-metrics-normality
+       |  +--ro one-way-residual-bandwidth?
+       |  |       rt-types:bandwidth-ieee-float32
+       |  +--ro one-way-residual-bandwidth-normality?
+       |  |       te-types:performance-metrics-normality
+       |  +--ro one-way-available-bandwidth?
+       |  |       rt-types:bandwidth-ieee-float32
+       |  +--ro one-way-available-bandwidth-normality?
+       |  |       te-types:performance-metrics-normality
+       |  +--ro one-way-utilized-bandwidth?
+       |  |       rt-types:bandwidth-ieee-float32
+       |  +--ro one-way-utilized-bandwidth-normality?
+       |          te-types:performance-metrics-normality
+       +--ro performance-metrics-two-way
+          +--ro two-way-delay?             uint32
+          +--ro two-way-delay-normality?
+                  te-types:performance-metrics-normality

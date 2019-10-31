@@ -1,0 +1,67 @@
+
+module: ietf-vn-kpi-telemetry
+  augment /vn:vn/vn:vn-list:
+    +--rw vn-scaling-intent
+    |  +--rw scale-in-intent
+    |  |  +--rw threshold-time?      uint32
+    |  |  +--rw cooldown-time?       uint32
+    |  |  +--rw scaling-condition* [performance-type]
+    |  |     +--rw performance-type           identityref
+    |  |     +--rw threshold-value?           string
+    |  |     +--rw scale-in-operation-type?
+    |  |             scaling-criteria-operation
+    |  +--rw scale-out-intent
+    |     +--rw threshold-time?      uint32
+    |     +--rw cooldown-time?       uint32
+    |     +--rw scaling-condition* [performance-type]
+    |        +--rw performance-type            identityref
+    |        +--rw threshold-value?            string
+    |        +--rw scale-out-operation-type?
+    |                scaling-criteria-operation
+    +--ro vn-telemetry
+       +--ro performance-metrics-one-way
+       |  +--ro one-way-delay?                           uint32
+       |  +--ro one-way-delay-normality?
+       |  |       te-types:performance-metrics-normality
+       |  +--ro one-way-residual-bandwidth?
+       |  |       rt-types:bandwidth-ieee-float32
+       |  +--ro one-way-residual-bandwidth-normality?
+       |  |       te-types:performance-metrics-normality
+       |  +--ro one-way-available-bandwidth?
+       |  |       rt-types:bandwidth-ieee-float32
+       |  +--ro one-way-available-bandwidth-normality?
+       |  |       te-types:performance-metrics-normality
+       |  +--ro one-way-utilized-bandwidth?
+       |  |       rt-types:bandwidth-ieee-float32
+       |  +--ro one-way-utilized-bandwidth-normality?
+       |          te-types:performance-metrics-normality
+       +--ro performance-metrics-two-way
+       |  +--ro two-way-delay?             uint32
+       |  +--ro two-way-delay-normality?
+       |          te-types:performance-metrics-normality
+       +--ro grouping-operation?            grouping-operation
+  augment /vn:vn/vn:vn-list/vn:vn-member-list:
+    +--ro vn-member-telemetry
+       +--ro performance-metrics-one-way
+       |  +--ro one-way-delay?                           uint32
+       |  +--ro one-way-delay-normality?
+       |  |       te-types:performance-metrics-normality
+       |  +--ro one-way-residual-bandwidth?
+       |  |       rt-types:bandwidth-ieee-float32
+       |  +--ro one-way-residual-bandwidth-normality?
+       |  |       te-types:performance-metrics-normality
+       |  +--ro one-way-available-bandwidth?
+       |  |       rt-types:bandwidth-ieee-float32
+       |  +--ro one-way-available-bandwidth-normality?
+       |  |       te-types:performance-metrics-normality
+       |  +--ro one-way-utilized-bandwidth?
+       |  |       rt-types:bandwidth-ieee-float32
+       |  +--ro one-way-utilized-bandwidth-normality?
+       |          te-types:performance-metrics-normality
+       +--ro performance-metrics-two-way
+       |  +--ro two-way-delay?             uint32
+       |  +--ro two-way-delay-normality?
+       |          te-types:performance-metrics-normality
+       +--ro te-grouped-params*
+       |       -> /te:te/tunnels/tunnel/te-kpi:te-telemetry/id
+       +--ro grouping-operation?            grouping-operation
