@@ -1,0 +1,27 @@
+
+module: ietf-l2nm-te-service-mapping
+  augment /l2vpn-ntw:l2vpn-ntw/l2vpn-ntw:vpn-services
+            /l2vpn-ntw:vpn-svc:
+    +--rw te-service-mapping!
+       +--rw te-mapping
+          +--rw map-type?               identityref
+          +--rw availability-type?      identityref
+          +--rw (te)?
+             +--:(vn)
+             |  +--rw vn-ref?           -> /vn:vn/vn-list/vn-id
+             +--:(te-topo)
+             |  +--rw vn-topology-id?   te-types:te-topology-id
+             |  +--rw abstract-node?
+             |          -> /nw:networks/network/node/node-id
+             +--:(te-tunnel)
+                +--rw te-tunnel-list*   te:tunnel-ref
+  augment /l2vpn-ntw:l2vpn-ntw/l2vpn-ntw:vpn-services
+            /l2vpn-ntw:vpn-svc/l2vpn-ntw:vpn-nodes
+            /l2vpn-ntw:vpn-node/l2vpn-ntw:vpn-network-accesses
+            /l2vpn-ntw:vpn-network-access:
+    +--rw (te)?
+       +--:(vn)
+       |  +--rw vn-ref?
+       |          -> /vn:ap/access-point-list/access-point-id
+       +--:(te)
+          +--rw ltp?      te-types:te-tp-id
