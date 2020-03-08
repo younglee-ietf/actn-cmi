@@ -3,16 +3,16 @@
 
 
 TEAS Working Group                                           Y. Lee, Ed.
-Internet-Draft                                                      SKKU
+Internet-Draft                                       Samsung Electronics
 Intended status: Standards Track                           D. Dhody, Ed.
-Expires: June 19, 2020                                       G. Fioccola
+Expires: September 9, 2020                                   G. Fioccola
                                                               Q. Wu, Ed.
                                                      Huawei Technologies
                                                            D. Ceccarelli
                                                                 Ericsson
                                                              J. Tantsura
                                                                   Apstra
-                                                       December 17, 2019
+                                                           March 8, 2020
 
 
         Traffic Engineering (TE) and Service Mapping Yang Model
@@ -46,21 +46,21 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on June 19, 2020.
+   This Internet-Draft will expire on September 9, 2020.
 
 
 
 
 
 
-Lee, et al.               Expires June 19, 2020                 [Page 1]
+Lee, et al.             Expires September 9, 2020               [Page 1]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
 Copyright Notice
 
-   Copyright (c) 2019 IETF Trust and the persons identified as the
+   Copyright (c) 2020 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -109,19 +109,19 @@ Table of Contents
 
 
 
-Lee, et al.               Expires June 19, 2020                 [Page 2]
+Lee, et al.             Expires September 9, 2020               [Page 2]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
-   8.  Security Considerations . . . . . . . . . . . . . . . . . . .  33
-   9.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  35
-   10. Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .  36
-   11. References  . . . . . . . . . . . . . . . . . . . . . . . . .  36
-     11.1.  Normative References . . . . . . . . . . . . . . . . . .  36
-     11.2.  Informative References . . . . . . . . . . . . . . . . .  38
-   Appendix A.  Contributor Addresses  . . . . . . . . . . . . . . .  39
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  39
+   8.  Security Considerations . . . . . . . . . . . . . . . . . . .  34
+   9.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  36
+   10. Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .  37
+   11. References  . . . . . . . . . . . . . . . . . . . . . . . . .  37
+     11.1.  Normative References . . . . . . . . . . . . . . . . . .  37
+     11.2.  Informative References . . . . . . . . . . . . . . . . .  39
+   Appendix A.  Contributor Addresses  . . . . . . . . . . . . . . .  40
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  40
 
 1.  Introduction
 
@@ -165,9 +165,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                 [Page 3]
+Lee, et al.             Expires September 9, 2020               [Page 3]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    While the IP/MPLS Provisioning Network Controller (PNC) is
@@ -221,9 +221,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                 [Page 4]
+Lee, et al.             Expires September 9, 2020               [Page 4]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
 1.2.  Tree diagram
@@ -277,9 +277,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                 [Page 5]
+Lee, et al.             Expires September 9, 2020               [Page 5]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
 2.  TE and Service Related Parameters
@@ -333,9 +333,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                 [Page 6]
+Lee, et al.             Expires September 9, 2020               [Page 6]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    o  VN/Tunnel Sharing - A customer could request a VPN service where
@@ -389,9 +389,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                 [Page 7]
+Lee, et al.             Expires September 9, 2020               [Page 7]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    mapping-types) module is the repository of all common groupings
@@ -445,9 +445,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                 [Page 8]
+Lee, et al.             Expires September 9, 2020               [Page 8]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    augmented to include the TE and Service mapping parameters.  Figure 2
@@ -501,9 +501,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                 [Page 9]
+Lee, et al.             Expires September 9, 2020               [Page 9]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
                   |         |   +--|-------------------|--+ |
@@ -557,9 +557,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                [Page 10]
+Lee, et al.             Expires September 9, 2020              [Page 10]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    o  PNC: The Provisioning Network Controller is responsible for
@@ -613,9 +613,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                [Page 11]
+Lee, et al.             Expires September 9, 2020              [Page 11]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    2.  The MDSC considers the service request and local policy to
@@ -669,9 +669,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                [Page 12]
+Lee, et al.             Expires September 9, 2020              [Page 12]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    can use constraints or other local policy to select the best
@@ -725,9 +725,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                [Page 13]
+Lee, et al.             Expires September 9, 2020              [Page 13]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    module: ietf-l3sm-te-service-mapping
@@ -781,9 +781,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                [Page 14]
+Lee, et al.             Expires September 9, 2020              [Page 14]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    module: ietf-l2sm-te-service-mapping
@@ -837,9 +837,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                [Page 15]
+Lee, et al.             Expires September 9, 2020              [Page 15]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    module: ietf-l1csm-te-service-mapping
@@ -893,9 +893,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                [Page 16]
+Lee, et al.             Expires September 9, 2020              [Page 16]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    module: ietf-l3nm-te-service-mapping
@@ -949,9 +949,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                [Page 17]
+Lee, et al.             Expires September 9, 2020              [Page 17]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    module: ietf-l2nm-te-service-mapping
@@ -989,7 +989,7 @@ Internet-Draft             TE Service Mapping              December 2019
 
 7.1.  ietf-te-service-mapping-types
 
- <CODE BEGINS> file "ietf-te-service-mapping-types@2019-12-17.yang"
+ <CODE BEGINS> file "ietf-te-service-mapping-types@2020-03-08.yang"
  module ietf-te-service-mapping-types {
    yang-version 1.1;
    namespace
@@ -1005,9 +1005,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                [Page 18]
+Lee, et al.             Expires September 9, 2020              [Page 18]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    import ietf-network {
@@ -1045,28 +1045,34 @@ Internet-Draft             TE Service Mapping              December 2019
       parameters and policies as a common grouping applicable to
       variuous service models (e.g., L1CSM, L2SM, L3SM, etc.)
 
-      Copyright (c) 2019 IETF Trust and the persons identified as
+      Copyright (c) 2020 IETF Trust and the persons identified as
       authors of the code.  All rights reserved.
 
       Redistribution and use in source and binary forms, with or
-      without modification, is permitted pursuant to, and subject
-      to the license terms contained in, the Simplified BSD License
-      set forth in Section 4.c of the IETF Trust's Legal Provisions
+      without modification, is permitted pursuant to, and subject to
+      the license terms contained in, the Simplified BSD License set
+      forth in Section 4.c of the IETF Trust's Legal Provisions
       Relating to IETF Documents
       (https://trustee.ietf.org/license-info).
 
       This version of this YANG module is part of RFC XXXX; see the
-      RFC itself for full legal notices.";
+      RFC itself for full legal notices.
 
 
 
 
-Lee, et al.               Expires June 19, 2020                [Page 19]
+Lee, et al.             Expires September 9, 2020              [Page 19]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
-   revision 2019-12-17 {
+      The key words 'MUST', 'MUST NOT', 'REQUIRED', 'SHALL', 'SHALL
+      NOT', 'SHOULD', 'SHOULD NOT', 'RECOMMENDED', 'NOT RECOMMENDED',
+      'MAY', and 'OPTIONAL' in this document are to be interpreted as
+      described in BCP 14 (RFC 2119) (RFC 8174) when, and only when,
+      they appear in all capitals, as shown here.";
+
+   revision 2020-03-08 {
      description
        "Initial revision.";
      reference
@@ -1108,20 +1114,20 @@ Internet-Draft             TE Service Mapping              December 2019
 
    identity select {
      base map-type;
+
+
+
+Lee, et al.             Expires September 9, 2020              [Page 20]
+
+Internet-Draft             TE Service Mapping                 March 2020
+
+
      description
        "The VPN service selects an existing tunnel with no
         modification.";
    }
 
    identity modify {
-
-
-
-Lee, et al.               Expires June 19, 2020                [Page 20]
-
-Internet-Draft             TE Service Mapping              December 2019
-
-
      base map-type;
      description
        "The VPN service selects an existing tunnel and allows to modify
@@ -1164,19 +1170,20 @@ Internet-Draft             TE Service Mapping              December 2019
    identity level-5 {
      base availability-type;
      description
+
+
+
+Lee, et al.             Expires September 9, 2020              [Page 21]
+
+Internet-Draft             TE Service Mapping                 March 2020
+
+
        "level 5: 99%";
    }
 
    /*
     * Groupings
     */
-
-
-
-Lee, et al.               Expires June 19, 2020                [Page 21]
-
-Internet-Draft             TE Service Mapping              December 2019
-
 
    grouping te-ref {
      description
@@ -1219,6 +1226,14 @@ Internet-Draft             TE Service Mapping              December 2019
          }
        }
        case te-tunnel {
+
+
+
+Lee, et al.             Expires September 9, 2020              [Page 22]
+
+Internet-Draft             TE Service Mapping                 March 2020
+
+
          leaf-list te-tunnel-list {
            type te:tunnel-ref;
            description
@@ -1226,14 +1241,6 @@ Internet-Draft             TE Service Mapping              December 2019
            reference
              "I-D.ietf-teas-yang-te: A YANG Data Model for Traffic
               Engineering Tunnels and Interfaces";
-
-
-
-Lee, et al.               Expires June 19, 2020                [Page 22]
-
-Internet-Draft             TE Service Mapping              December 2019
-
-
          }
        }
      }
@@ -1275,6 +1282,14 @@ Internet-Draft             TE Service Mapping              December 2019
    //grouping
 
    grouping te-mapping {
+
+
+
+Lee, et al.             Expires September 9, 2020              [Page 23]
+
+Internet-Draft             TE Service Mapping                 March 2020
+
+
      description
        "Mapping between Services and TE";
      container te-mapping {
@@ -1282,14 +1297,6 @@ Internet-Draft             TE Service Mapping              December 2019
          "Mapping between Services and TE";
        leaf map-type {
          type identityref {
-
-
-
-Lee, et al.               Expires June 19, 2020                [Page 23]
-
-Internet-Draft             TE Service Mapping              December 2019
-
-
            base map-type;
          }
          description
@@ -1316,7 +1323,7 @@ Internet-Draft             TE Service Mapping              December 2019
 
 7.2.1.  ietf-l3sm-te-service-mapping
 
- <CODE BEGINS> file "ietf-l3sm-te-service-mapping@2019-12-17.yang"
+ <CODE BEGINS> file "ietf-l3sm-te-service-mapping@2020-03-08.yang"
  module ietf-l3sm-te-service-mapping {
    yang-version 1.1;
    namespace
@@ -1331,6 +1338,14 @@ Internet-Draft             TE Service Mapping              December 2019
    import ietf-l3vpn-svc {
      prefix l3vpn-svc;
      reference
+
+
+
+Lee, et al.             Expires September 9, 2020              [Page 24]
+
+Internet-Draft             TE Service Mapping                 March 2020
+
+
        "RFC 8299: YANG Data Model for L3VPN Service Delivery";
    }
 
@@ -1338,14 +1353,6 @@ Internet-Draft             TE Service Mapping              December 2019
      "IETF Traffic Engineering Architecture and Signaling (TEAS)
       Working Group";
    contact
-
-
-
-Lee, et al.               Expires June 19, 2020                [Page 24]
-
-Internet-Draft             TE Service Mapping              December 2019
-
-
      "WG Web:   <http://tools.ietf.org/wg/teas/>
       WG List:  <mailto:teas@ietf.org>
 
@@ -1359,20 +1366,26 @@ Internet-Draft             TE Service Mapping              December 2019
      "This module contains a YANG module for the mapping of Layer 3
       Service Model (L3SM) to the TE and VN.
 
-      Copyright (c) 2019 IETF Trust and the persons identified as
+      Copyright (c) 2020 IETF Trust and the persons identified as
       authors of the code.  All rights reserved.
 
       Redistribution and use in source and binary forms, with or
-      without modification, is permitted pursuant to, and subject
-      to the license terms contained in, the Simplified BSD License
-      set forth in Section 4.c of the IETF Trust's Legal Provisions
+      without modification, is permitted pursuant to, and subject to
+      the license terms contained in, the Simplified BSD License set
+      forth in Section 4.c of the IETF Trust's Legal Provisions
       Relating to IETF Documents
       (https://trustee.ietf.org/license-info).
 
       This version of this YANG module is part of RFC XXXX; see the
-      RFC itself for full legal notices.";
+      RFC itself for full legal notices.
 
-   revision 2019-12-17 {
+      The key words 'MUST', 'MUST NOT', 'REQUIRED', 'SHALL', 'SHALL
+      NOT', 'SHOULD', 'SHOULD NOT', 'RECOMMENDED', 'NOT RECOMMENDED',
+      'MAY', and 'OPTIONAL' in this document are to be interpreted as
+      described in BCP 14 (RFC 2119) (RFC 8174) when, and only when,
+      they appear in all capitals, as shown here.";
+
+   revision 2020-03-08 {
      description
        "Initial revision.";
      reference
@@ -1381,6 +1394,14 @@ Internet-Draft             TE Service Mapping              December 2019
 
    /*
     * Augmentation to L3SM
+
+
+
+Lee, et al.             Expires September 9, 2020              [Page 25]
+
+Internet-Draft             TE Service Mapping                 March 2020
+
+
     */
 
    augment "/l3vpn-svc:l3vpn-svc/l3vpn-svc:vpn-services"
@@ -1394,13 +1415,6 @@ Internet-Draft             TE Service Mapping              December 2019
        uses tsm-types:te-mapping;
      }
    }
-
-
-
-Lee, et al.               Expires June 19, 2020                [Page 25]
-
-Internet-Draft             TE Service Mapping              December 2019
-
 
    //augment
 
@@ -1420,7 +1434,7 @@ Internet-Draft             TE Service Mapping              December 2019
 
 7.2.2.  ietf-l2sm-te-service-mapping
 
- <CODE BEGINS> file "ietf-l2sm-te-service-mapping@2019-12-17.yang"
+ <CODE BEGINS> file "ietf-l2sm-te-service-mapping@2020-03-08.yang"
  module ietf-l2sm-te-service-mapping {
    yang-version 1.1;
    namespace
@@ -1436,6 +1450,14 @@ Internet-Draft             TE Service Mapping              December 2019
      prefix l2vpn-svc;
      reference
        "RFC 8466: A YANG Data Model for Layer 2 Virtual Private Network
+
+
+
+Lee, et al.             Expires September 9, 2020              [Page 26]
+
+Internet-Draft             TE Service Mapping                 March 2020
+
+
         (L2VPN) Service Delivery";
    }
 
@@ -1450,34 +1472,32 @@ Internet-Draft             TE Service Mapping              December 2019
                 <mailto:younglee.tx@gmail.com>
       Editor:   Dhruv Dhody
                 <mailto:dhruv.ietf@gmail.com>
-
-
-
-Lee, et al.               Expires June 19, 2020                [Page 26]
-
-Internet-Draft             TE Service Mapping              December 2019
-
-
       Editor:   Qin Wu
                 <mailto:bill.wu@huawei.com>";
    description
      "This module contains a YANG module for the mapping of Layer 2
       Service Model (L2SM) to the TE and VN.
 
-      Copyright (c) 2019 IETF Trust and the persons identified as
+      Copyright (c) 2020 IETF Trust and the persons identified as
       authors of the code.  All rights reserved.
 
       Redistribution and use in source and binary forms, with or
-      without modification, is permitted pursuant to, and subject
-      to the license terms contained in, the Simplified BSD License
-      set forth in Section 4.c of the IETF Trust's Legal Provisions
+      without modification, is permitted pursuant to, and subject to
+      the license terms contained in, the Simplified BSD License set
+      forth in Section 4.c of the IETF Trust's Legal Provisions
       Relating to IETF Documents
       (https://trustee.ietf.org/license-info).
 
       This version of this YANG module is part of RFC XXXX; see the
-      RFC itself for full legal notices.";
+      RFC itself for full legal notices.
 
-   revision 2019-12-17 {
+      The key words 'MUST', 'MUST NOT', 'REQUIRED', 'SHALL', 'SHALL
+      NOT', 'SHOULD', 'SHOULD NOT', 'RECOMMENDED', 'NOT RECOMMENDED',
+      'MAY', and 'OPTIONAL' in this document are to be interpreted as
+      described in BCP 14 (RFC 2119) (RFC 8174) when, and only when,
+      they appear in all capitals, as shown here.";
+
+   revision 2020-03-08 {
      description
        "Initial revision.";
      reference
@@ -1486,6 +1506,14 @@ Internet-Draft             TE Service Mapping              December 2019
 
    /*
     * Augmentation to L3SM
+
+
+
+Lee, et al.             Expires September 9, 2020              [Page 27]
+
+Internet-Draft             TE Service Mapping                 March 2020
+
+
     */
 
    augment "/l2vpn-svc:l2vpn-svc/l2vpn-svc:vpn-services/"
@@ -1506,14 +1534,6 @@ Internet-Draft             TE Service Mapping              December 2019
          + "/l2vpn-svc:site-network-accesses"
          + "/l2vpn-svc:site-network-access" {
      description
-
-
-
-Lee, et al.               Expires June 19, 2020                [Page 27]
-
-Internet-Draft             TE Service Mapping              December 2019
-
-
        "This augment is only valid for TE mapping of L2SM network-access
         to TE endpoints";
      uses tsm-types:te-endpoint-ref;
@@ -1526,7 +1546,7 @@ Internet-Draft             TE Service Mapping              December 2019
 
 7.2.3.  ietf-l1csm-te-service-mapping
 
- <CODE BEGINS> file "ietf-l1csm-te-service-mapping@2019-12-17.yang"
+ <CODE BEGINS> file "ietf-l1csm-te-service-mapping@2020-03-08.yang"
  module ietf-l1csm-te-service-mapping {
    yang-version 1.1;
    namespace
@@ -1542,6 +1562,14 @@ Internet-Draft             TE Service Mapping              December 2019
      prefix l1csm;
      reference
        "I-D.ietf-ccamp-l1csm-yang: A YANG Data Model for L1 Connectivity
+
+
+
+Lee, et al.             Expires September 9, 2020              [Page 28]
+
+Internet-Draft             TE Service Mapping                 March 2020
+
+
         Service Model (L1CSM)";
    }
 
@@ -1562,28 +1590,26 @@ Internet-Draft             TE Service Mapping              December 2019
      "This module contains a YANG module for the mapping of
       Layer 1 Connectivity Service Module (L1CSM) to the TE and VN
 
-
-
-
-Lee, et al.               Expires June 19, 2020                [Page 28]
-
-Internet-Draft             TE Service Mapping              December 2019
-
-
-      Copyright (c) 2019 IETF Trust and the persons identified as
+      Copyright (c) 2020 IETF Trust and the persons identified as
       authors of the code.  All rights reserved.
 
       Redistribution and use in source and binary forms, with or
-      without modification, is permitted pursuant to, and subject
-      to the license terms contained in, the Simplified BSD License
-      set forth in Section 4.c of the IETF Trust's Legal Provisions
+      without modification, is permitted pursuant to, and subject to
+      the license terms contained in, the Simplified BSD License set
+      forth in Section 4.c of the IETF Trust's Legal Provisions
       Relating to IETF Documents
       (https://trustee.ietf.org/license-info).
 
       This version of this YANG module is part of RFC XXXX; see the
-      RFC itself for full legal notices.";
+      RFC itself for full legal notices.
 
-   revision 2019-12-17 {
+      The key words 'MUST', 'MUST NOT', 'REQUIRED', 'SHALL', 'SHALL
+      NOT', 'SHOULD', 'SHOULD NOT', 'RECOMMENDED', 'NOT RECOMMENDED',
+      'MAY', and 'OPTIONAL' in this document are to be interpreted as
+      described in BCP 14 (RFC 2119) (RFC 8174) when, and only when,
+      they appear in all capitals, as shown here.";
+
+   revision 2020-03-08 {
      description
        "Initial revision.";
      reference
@@ -1592,6 +1618,14 @@ Internet-Draft             TE Service Mapping              December 2019
 
    /*
     * Augmentation to L1CSM
+
+
+
+Lee, et al.             Expires September 9, 2020              [Page 29]
+
+Internet-Draft             TE Service Mapping                 March 2020
+
+
     */
 
    augment "/l1csm:l1-connectivity/l1csm:services/l1csm:service" {
@@ -1618,21 +1652,13 @@ Internet-Draft             TE Service Mapping              December 2019
    //augment
  }
 
-
-
-
-Lee, et al.               Expires June 19, 2020                [Page 29]
-
-Internet-Draft             TE Service Mapping              December 2019
-
-
  <CODE ENDS>
 
 7.3.  Network Models
 
 7.3.1.  ietf-l3nm-te-service-mapping
 
- <CODE BEGINS> file "ietf-l3nm-te-service-mapping@2019-12-17.yang"
+ <CODE BEGINS> file "ietf-l3nm-te-service-mapping@2020-03-08.yang"
  module ietf-l3nm-te-service-mapping {
    yang-version 1.1;
    namespace
@@ -1648,6 +1674,14 @@ Internet-Draft             TE Service Mapping              December 2019
      prefix l3vpn-ntw;
      reference
        "I-D.ietf-opsawg-l3sm-l3nm: A Layer 3 VPN Network YANG Model";
+
+
+
+Lee, et al.             Expires September 9, 2020              [Page 30]
+
+Internet-Draft             TE Service Mapping                 March 2020
+
+
    }
 
    organization
@@ -1667,28 +1701,26 @@ Internet-Draft             TE Service Mapping              December 2019
      "This module contains a YANG module for the mapping of Layer 3
       Network Model (L3NM) to the TE and VN.
 
-      Copyright (c) 2019 IETF Trust and the persons identified as
+      Copyright (c) 2020 IETF Trust and the persons identified as
       authors of the code.  All rights reserved.
 
       Redistribution and use in source and binary forms, with or
-      without modification, is permitted pursuant to, and subject
-      to the license terms contained in, the Simplified BSD License
-      set forth in Section 4.c of the IETF Trust's Legal Provisions
-
-
-
-Lee, et al.               Expires June 19, 2020                [Page 30]
-
-Internet-Draft             TE Service Mapping              December 2019
-
-
+      without modification, is permitted pursuant to, and subject to
+      the license terms contained in, the Simplified BSD License set
+      forth in Section 4.c of the IETF Trust's Legal Provisions
       Relating to IETF Documents
       (https://trustee.ietf.org/license-info).
 
       This version of this YANG module is part of RFC XXXX; see the
-      RFC itself for full legal notices.";
+      RFC itself for full legal notices.
 
-   revision 2019-12-17 {
+      The key words 'MUST', 'MUST NOT', 'REQUIRED', 'SHALL', 'SHALL
+      NOT', 'SHOULD', 'SHOULD NOT', 'RECOMMENDED', 'NOT RECOMMENDED',
+      'MAY', and 'OPTIONAL' in this document are to be interpreted as
+      described in BCP 14 (RFC 2119) (RFC 8174) when, and only when,
+      they appear in all capitals, as shown here.";
+
+   revision 2020-03-08 {
      description
        "Initial revision.";
      reference
@@ -1698,6 +1730,13 @@ Internet-Draft             TE Service Mapping              December 2019
    /*
     * Augmentation to L3NM
     */
+
+
+
+Lee, et al.             Expires September 9, 2020              [Page 31]
+
+Internet-Draft             TE Service Mapping                 March 2020
+
 
    augment "/l3vpn-ntw:l3vpn-ntw/l3vpn-ntw:vpn-services"
          + "/l3vpn-ntw:vpn-service" {
@@ -1729,18 +1768,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
    <CODE ENDS>
 
-
-
-
-
-Lee, et al.               Expires June 19, 2020                [Page 31]
-
-Internet-Draft             TE Service Mapping              December 2019
-
-
 7.3.2.  ietf-l2nm-te-service-mapping
 
-<CODE BEGINS> file "ietf-l2nm-te-service-mapping@2019-12-17.yang"
+<CODE BEGINS> file "ietf-l2nm-te-service-mapping@2020-03-08.yang"
 module ietf-l2nm-te-service-mapping {
   yang-version 1.1;
   namespace
@@ -1756,6 +1786,14 @@ module ietf-l2nm-te-service-mapping {
     prefix l2vpn-ntw;
     reference
       "I-D.-barguil-opsawg-l2sm-l2nm: A Layer 2 VPN Network YANG Model";
+
+
+
+Lee, et al.             Expires September 9, 2020              [Page 32]
+
+Internet-Draft             TE Service Mapping                 March 2020
+
+
   }
 
   organization
@@ -1775,28 +1813,26 @@ module ietf-l2nm-te-service-mapping {
     "This module contains a YANG module for the mapping of Layer 2
      Network Model (L2NM) to the TE and VN.
 
-     Copyright (c) 2019 IETF Trust and the persons identified as
+     Copyright (c) 2020 IETF Trust and the persons identified as
      authors of the code.  All rights reserved.
 
      Redistribution and use in source and binary forms, with or
-     without modification, is permitted pursuant to, and subject
-     to the license terms contained in, the Simplified BSD License
-     set forth in Section 4.c of the IETF Trust's Legal Provisions
+     without modification, is permitted pursuant to, and subject to
+     the license terms contained in, the Simplified BSD License set
+     forth in Section 4.c of the IETF Trust's Legal Provisions
      Relating to IETF Documents
      (https://trustee.ietf.org/license-info).
 
      This version of this YANG module is part of RFC XXXX; see the
+     RFC itself for full legal notices.
 
+     The key words 'MUST', 'MUST NOT', 'REQUIRED', 'SHALL', 'SHALL
+     NOT', 'SHOULD', 'SHOULD NOT', 'RECOMMENDED', 'NOT RECOMMENDED',
+     'MAY', and 'OPTIONAL' in this document are to be interpreted as
+     described in BCP 14 (RFC 2119) (RFC 8174) when, and only when,
+     they appear in all capitals, as shown here.";
 
-
-Lee, et al.               Expires June 19, 2020                [Page 32]
-
-Internet-Draft             TE Service Mapping              December 2019
-
-
-     RFC itself for full legal notices.";
-
-  revision 2019-12-17 {
+  revision 2020-03-08 {
     description
       "Initial revision.";
     reference
@@ -1806,6 +1842,13 @@ Internet-Draft             TE Service Mapping              December 2019
   /*
    * Augmentation to L2NM
    */
+
+
+
+Lee, et al.             Expires September 9, 2020              [Page 33]
+
+Internet-Draft             TE Service Mapping                 March 2020
+
 
   augment "/l2vpn-ntw:l2vpn-ntw/l2vpn-ntw:vpn-services"
         + "/l2vpn-ntw:vpn-svc" {
@@ -1842,14 +1885,6 @@ Internet-Draft             TE Service Mapping              December 2019
    The YANG modules defined in this document is designed to be accessed
    via network management protocol such as NETCONF [RFC6241] or RESTCONF
    [RFC8040].  The lowest NETCONF layer is the secure transport layer
-
-
-
-Lee, et al.               Expires June 19, 2020                [Page 33]
-
-Internet-Draft             TE Service Mapping              December 2019
-
-
    and the mandatory-to-implement secure transport is SSH [RFC6242].
    The lowest RESTCONF layer is HTTPS, and the mandatory-to-implement
    secure transport is TLS [RFC8446]
@@ -1863,6 +1898,14 @@ Internet-Draft             TE Service Mapping              December 2019
    are writable/creatable/deletable (i.e., config true, which is the
    default).  These data nodes may be considered sensitive or vulnerable
    in some network environments.  Write operations (e.g., <edit-config>)
+
+
+
+Lee, et al.             Expires September 9, 2020              [Page 34]
+
+Internet-Draft             TE Service Mapping                 March 2020
+
+
    to these data nodes without proper protection can have a negative
    effect on network operations.  These are the subtrees and data nodes
    and their sensitivity/vulnerability:
@@ -1899,13 +1942,6 @@ Internet-Draft             TE Service Mapping              December 2019
       network-accesses/vpn-network-access/te/ - configure TE Endpoint
       mapping.
 
-
-
-Lee, et al.               Expires June 19, 2020                [Page 34]
-
-Internet-Draft             TE Service Mapping              December 2019
-
-
    Unauthorized access to above list can adversely affect the VPN
    service.
 
@@ -1918,6 +1954,13 @@ Internet-Draft             TE Service Mapping              December 2019
    defined in this document.
 
    This document has no RPC defined.
+
+
+
+Lee, et al.             Expires September 9, 2020              [Page 35]
+
+Internet-Draft             TE Service Mapping                 March 2020
+
 
 9.  IANA Considerations
 
@@ -1957,9 +2000,22 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                [Page 35]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lee, et al.             Expires September 9, 2020              [Page 36]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    Name:      ietf-te-service-mapping-types
@@ -1995,8 +2051,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 10.  Acknowledgements
 
-   We thank Diego Caviglia and Igor Bryskin for useful discussions and
-   motivation for this work.
+   We thank Diego Caviglia, Igor Bryskin, Oscar Gonzalez de Dios, and
+   Samier Barguil Giraldo for useful discussions and motivation for this
+   work.
 
 11.  References
 
@@ -2012,10 +2069,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-
-Lee, et al.               Expires June 19, 2020                [Page 36]
+Lee, et al.             Expires September 9, 2020              [Page 37]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    [RFC7926]  Farrel, A., Ed., Drake, J., Bitar, N., Swallow, G.,
@@ -2069,9 +2125,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                [Page 37]
+Lee, et al.             Expires September 9, 2020              [Page 38]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    [I-D.ietf-teas-actn-vn-yang]
@@ -2125,9 +2181,9 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                [Page 38]
+Lee, et al.             Expires September 9, 2020              [Page 39]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    [RFC8342]  Bjorklund, M., Schoenwaelder, J., Shafer, P., Watsen, K.,
@@ -2150,8 +2206,8 @@ Internet-Draft             TE Service Mapping              December 2019
               Lee, Y., Zheng, H., Ceccarelli, D., Yoon, B., Dios, O.,
               Shin, J., and S. Belotti, "Applicability of YANG models
               for Abstraction and Control of Traffic Engineered
-              Networks", draft-ietf-teas-actn-yang-04 (work in
-              progress), August 2019.
+              Networks", draft-ietf-teas-actn-yang-05 (work in
+              progress), February 2020.
 
 Appendix A.  Contributor Addresses
 
@@ -2173,7 +2229,7 @@ Appendix A.  Contributor Addresses
 Authors' Addresses
 
    Young Lee (editor)
-   SKKU
+   Samsung Electronics
 
    Email: younglee.tx@gmail.com
 
@@ -2181,9 +2237,9 @@ Authors' Addresses
 
 
 
-Lee, et al.               Expires June 19, 2020                [Page 39]
+Lee, et al.             Expires September 9, 2020              [Page 40]
 
-Internet-Draft             TE Service Mapping              December 2019
+Internet-Draft             TE Service Mapping                 March 2020
 
 
    Dhruv Dhody (editor)
@@ -2237,4 +2293,4 @@ Internet-Draft             TE Service Mapping              December 2019
 
 
 
-Lee, et al.               Expires June 19, 2020                [Page 40]
+Lee, et al.             Expires September 9, 2020              [Page 41]
